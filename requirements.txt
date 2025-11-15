@@ -4,3 +4,4 @@ SQLAlchemy
 aiosqlite
 pydantic
 httpx
+pytest

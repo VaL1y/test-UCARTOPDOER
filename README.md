@@ -5,6 +5,14 @@ uvicorn app.main:app --reload
 
 База создаётся автоматически в файле `incidents.db`.
 
+## Запуск с автотестами
+
+```bash
+docker compose up --build
+```
+Сервис api поднимается только если тесты (pytest) успешно прошли.
+Приложение будет доступно на http://localhost:8000
+
 ## Эндпоинты
 
 ### 1. Создать инцидент
@@ -24,3 +32,5 @@ PATCH /incidents/1
 ```json
 { "status": "resolved" }
 ```
+
+
